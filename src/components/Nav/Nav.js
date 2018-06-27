@@ -9,7 +9,7 @@ const Nav = props => (
     </a>
     <ul className="navbar-nav  justify-content-end text-uppercase">
     <li className="nav-item" id="rw">{props.rightWrong}</li>
-    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
       <li className="nav-item" id="cur-sco">Current Score {props.score}</li>
       &#160;|&#160;
       <li className="nav-item" id="top-sco">Top Score {props.topScore}</li>

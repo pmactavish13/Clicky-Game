@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const routes = require("./routes");
 const app = express();
+const path = require('path');
 const PORT = process.env.PORT || 3000;
 
 // Define middleware here
@@ -13,8 +13,8 @@ if (process.env.NODE_ENV === "production") {
 }
 // Add routes, both API and view
 // If no API routes are hit, send the React app
-router.use(function(req, res) {
-    res.sendFile(path.join(__dirname, "../client/build/index.html"));
+app.use(function(req, res) {
+    res.sendFile(path.join(__dirname, "client/build/index.html"));
   });
 
 // Start the API server
